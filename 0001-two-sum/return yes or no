@@ -1,0 +1,13 @@
+int i=0,sum=nums[0];
+        sort(nums.begin(),nums.end());
+        for(int j=nums.size()-1;j>=0;j--) {
+            sum = nums[i] + nums[j];
+
+            if(sum == target) return "YES";
+
+            else if(sum < target) {
+                i++;
+            }
+
+        }
+return "NO";
