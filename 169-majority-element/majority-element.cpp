@@ -1,3 +1,6 @@
+//TC = O(N LOG N) + O(N)
+//SC = O(N)
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
