@@ -15,3 +15,19 @@ public:
 
         }
 return "NO";
+
+
+//OPTIMAL-**** without using hash and for returning yes or no
+        int right =0,left=0;
+        sort(nums.begin(),nums.end());
+        while(left < right) {
+        int sum = nums[left] + nums[right]; 
+            if(sum == target) {
+                return "YES";
+            }
+        
+            else if(sum > target) right--;
+        
+            else left--;
+        }
+    return "NO";
