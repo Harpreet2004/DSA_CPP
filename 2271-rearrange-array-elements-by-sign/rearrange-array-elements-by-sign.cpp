@@ -25,6 +25,7 @@ public:
         // return {nums};
 
         //OPTIMAL****
+        //TC = O(N) SC = O(N)
         int n= nums.size();
         vector<int> ans(n,0);
         
